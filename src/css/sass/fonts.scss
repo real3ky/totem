@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Scandia';
+  src: url('../fonts/Scandia-RegularItalic.eot');
+  src: url('../fonts/Scandia-RegularItalic.woff2') format('woff2'),
+       url('../fonts/Scandia-RegularItalic.woff') format('woff'),
+       url('../fonts/Scandia-RegularItalic.ttf') format('truetype'),
+       url('../fonts/Scandia-RegularItalic.svg#Scandia-RegularItalic') format('svg'),
+       url('../fonts/Scandia-RegularItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Scandia';
+  src: url('../fonts/Scandia-Regular.eot');
+  src: url('../fonts/Scandia-Regular.woff2') format('woff2'),
+       url('../fonts/Scandia-Regular.woff') format('woff'),
+       url('../fonts/Scandia-Regular.ttf') format('truetype'),
+       url('../fonts/Scandia-Regular.svg#Scandia-Regular') format('svg'),
+       url('../fonts/Scandia-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scandia';
+  src: url('../fonts/Scandia-Medium.eot');
+  src: url('../fonts/Scandia-Medium.woff2') format('woff2'),
+       url('../fonts/Scandia-Medium.woff') format('woff'),
+       url('../fonts/Scandia-Medium.ttf') format('truetype'),
+       url('../fonts/Scandia-Medium.svg#Scandia-Medium') format('svg'),
+       url('../fonts/Scandia-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scandia';
+  src: url('../fonts/Scandia-Bold.eot');
+  src: url('../fonts/Scandia-Bold.woff2') format('woff2'),
+       url('../fonts/Scandia-Bold.woff') format('woff'),
+       url('../fonts/Scandia-Bold.ttf') format('truetype'),
+       url('../fonts/Scandia-Bold.svg#Scandia-Bold') format('svg'),
+       url('../fonts/Scandia-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scandia';
+  src: url('../font/Scandia-BoldItalic.eot');
+  src: url('../font/Scandia-BoldItalic.woff2') format('woff2'),
+       url('../font/Scandia-BoldItalic.woff') format('woff'),
+       url('../font/Scandia-BoldItalic.ttf') format('truetype'),
+       url('../font/Scandia-BoldItalic.svg#Scandia-BoldItalic') format('svg'),
+       url('../font/Scandia-BoldItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: italic;
+}
