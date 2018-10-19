@@ -34,6 +34,54 @@ p {
     max-width: 190px;;
 }
 
+/* Nav */ 
+
+nav.nav {
+    text-align: left;
+    display: block;
+    background: #fff;
+    padding: 4rem;
+    width: 320px;
+    position: fixed;
+    right: -320px;
+    top: 0;
+    z-index: 10;
+
+        
+    ul {
+        margin: 2rem 0 0 0;
+        list-style: none;
+
+        .menu-item a {
+            padding: 2rem;
+            display: block;
+
+            &:hover, &:active, &:focus {
+                background-color: #f5f5f5; 
+                text-decoration: none;
+                color: #444;
+            }
+        }
+    }
+}
+
+.burger {
+    font-size: 32px;
+    line-height: 0;
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    margin-top: -18px;
+
+    &:hover {
+        color: #e71975;
+    }
+
+}
+
 /* Slider */
 
 .ms-slide-info {
@@ -63,11 +111,6 @@ p {
     }
 }
 
-// color: $white;
-// margin: 0 auto;
-// font-size: 32px;
-// background-color: $black;
-
 /* Modal */
 
 .single-post-modal-content {
@@ -87,8 +130,18 @@ p {
 .modal-image-gallery {
     background-color: #fff;
 
+    .orbit {
+        height: 100%;
+        min-height: 612px;
+    }
+    
+    .orbit-wrapper {
+        height: 90%;
+    }
+
     .orbit-container {
-        min-height: 500px;
+        
+        min-height: 550px;
     }
 
     .orbit-slide {
@@ -99,7 +152,7 @@ p {
         text-align: center;
         height: 100%;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
         
         .orbit-image {
@@ -109,9 +162,14 @@ p {
     }
 
     .orbit-bullets {
-        margin-top: 4.6rem;
+        margin: 0;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         button {
+            position: relative;
             cursor: pointer;
             margin: 0 10px;
             background-color: rgba(231, 25, 118, 0.5);
@@ -165,7 +223,7 @@ p {
             height: 380px;
             display: table-cell;
             text-align: center;
-            vertical-align: bottom;
+            vertical-align: middle;
       
             img {
                 max-height: 100%;
@@ -177,6 +235,7 @@ p {
     .products-cell-title {
         font-size: 24px;
         font-weight: 600;
+        margin-top: 2rem;
     }
     // .products-cell-price {
 

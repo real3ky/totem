@@ -2720,6 +2720,41 @@ p {
 .logo-img {
   max-width: 190px; }
 
+/* Nav */
+nav.nav {
+  text-align: left;
+  display: block;
+  background: #fff;
+  padding: 4rem;
+  width: 320px;
+  position: fixed;
+  right: -320px;
+  top: 0;
+  z-index: 10; }
+  nav.nav ul {
+    margin: 2rem 0 0 0;
+    list-style: none; }
+    nav.nav ul .menu-item a {
+      padding: 2rem;
+      display: block; }
+      nav.nav ul .menu-item a:hover, nav.nav ul .menu-item a:active, nav.nav ul .menu-item a:focus {
+        background-color: #f5f5f5;
+        text-decoration: none;
+        color: #444; }
+
+.burger {
+  font-size: 32px;
+  line-height: 0;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  margin-top: -18px; }
+  .burger:hover {
+    color: #e71975; }
+
 /* Slider */
 .ms-slide-info {
   position: absolute !important;
@@ -2754,22 +2789,32 @@ p {
 
 .modal-image-gallery {
   background-color: #fff; }
+  .modal-image-gallery .orbit {
+    height: 100%;
+    min-height: 612px; }
+  .modal-image-gallery .orbit-wrapper {
+    height: 90%; }
   .modal-image-gallery .orbit-container {
-    min-height: 500px; }
+    min-height: 550px; }
   .modal-image-gallery .orbit-slide {
     height: 100%; }
   .modal-image-gallery .orbit-figure {
     text-align: center;
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center; }
     .modal-image-gallery .orbit-figure .orbit-image {
       max-height: 380px;
       width: auto; }
   .modal-image-gallery .orbit-bullets {
-    margin-top: 4.6rem; }
+    margin: 0;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .modal-image-gallery .orbit-bullets button {
+      position: relative;
       cursor: pointer;
       margin: 0 10px;
       background-color: rgba(231, 25, 118, 0.5); }
@@ -2809,13 +2854,14 @@ p {
       height: 380px;
       display: table-cell;
       text-align: center;
-      vertical-align: bottom; }
+      vertical-align: middle; }
       .products-cell .fake-table .products-cell-img img {
         max-height: 100%;
         vertical-align: bottom; }
   .products-cell .products-cell-title {
     font-size: 24px;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-top: 2rem; }
   .products-cell:hover {
     border: solid 1px #e71975; }
 

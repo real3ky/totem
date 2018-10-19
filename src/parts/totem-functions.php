@@ -44,7 +44,9 @@
 
 // Shortcode for Products row
 function rico_products_shortcode( $attr ) {
+  $categoria = $attr['categoria'];
   ob_start();
+  set_query_var( 'categoria', $categoria );
   get_template_part( 'parts/get-posts' );
   return ob_get_clean();
 }

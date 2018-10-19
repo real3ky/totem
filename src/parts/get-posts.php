@@ -1,13 +1,17 @@
 <?php 
 
-$tavole = new WP_Query(array( 'post_type' => 'html5-blank', 'posts_per_page' => 3, 'category_name' => 'tavole', ));
+$products = new WP_Query(array( 
+  'post_type' => 'html5-blank', 
+  'posts_per_page' => 3, 
+  'category_name' => $categoria, 
+));
 
-if ( $tavole->have_posts() ) { ?>
+if ( $products->have_posts() ) { ?>
 
   <div class="grid-container full">
   <div class="grid-x">
 	
-  <?php while ( $tavole->have_posts() ) : $tavole->the_post(); ?>
+  <?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
     <div class="cell small-12 medium-4 products-cell">
       <?php if ( has_post_thumbnail() ) : ?>

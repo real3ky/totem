@@ -1,8 +1,6 @@
 (function( root, $, undefined ) {
 	"use strict";
-	// $(document).ready(function(){
-	// 	$(document).foundation();
-	// });
+	
 	// $('full-width-row').each( function() {
 	// 	var fullWidth = ($(window).width() - 1280) / 2;
 	// 	console.log(typeof fullWidth);
@@ -22,6 +20,15 @@ $(document).ready(function(){
 		$.ajax($url).done(function(resp){
 			$modal.html(resp).foundation("open");
 		});
+	});
+});
+
+$(document).ready(function(){
+	$(".burger").click(function() {
+		var slide = $(this).hasClass("bopen") ? "0" : "-320px";
+		$(".nav").animate({
+			right: slide,
+		}, 300);
 	});
 });
 

@@ -33,26 +33,26 @@
 			<header class="header clear" role="banner">
 
 			  <div class="grid-container fluid stiqui-container">
-				<div class="grid-x grid-margin-x grid-margin-y top-header stiqui">
-				  <div class="small-6 medium-4 cell">
-				  <!-- logo -->
-					<a href="<?php echo esc_url( home_url() ); ?>">
-					  <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/totemlogo.png" alt="Totem Boards" class="logo-img">
-					</a>
-					<!-- /logo -->
-				  </div>
+					<div class="grid-x grid-margin-x grid-margin-y top-header stiqui">
+						<div class="small-6 medium-4 cell">
+						<!-- logo -->
+						<a href="<?php echo esc_url( home_url() ); ?>">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/totemlogo.png" alt="Totem Boards" class="logo-img">
+						</a>
+						<!-- /logo -->
+						</div>
 
-				  <div class="small-6 meidum-8 cell text-right">
-                    <a id="burger" href="#" class="burger" ><i class="fi-list"></i><span>One</span></a>
-       
-		     	  	<!-- nav 
-					<nav class="nav" role="navigation">
-						< ?php html5blank_nav(); ? m>
-					</nav>
-				  	/nav -->
-                  </div>
-	           </div>
-			</div>
+						<div class="small-6 medium-8 cell text-right">
+							<i id="burger" class="fi-list burger bopen" ></i>
+							<!-- nav -->
+							<nav class="nav" role="navigation">
+							<i id="burger" class="fi-x burger bclose" ></i>
+								<?php html5blank_nav(); ?>
+							</nav>
+							<!-- /nav -->
+						</div>
+					</div>
+			  </div>
 
 			</header>
 			<!-- /header -->

@@ -40,7 +40,7 @@ get_header();
 
 		</section>
 		<!-- /section -->
-		<div class="reveal-container reveal" id="containerReveal" data-reveal>
+		<div class="reveal-container reveal" id="containerReveal" data-animation-in="slide-in-down" data-animation-out="spin-out" data-reveal>
 		<button class="close-button" data-close aria-label="Close modal" type="button">
     	<span aria-hidden="true">&times;</span>
   	</button>
