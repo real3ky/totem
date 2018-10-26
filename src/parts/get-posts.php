@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $products = new WP_Query(array( 
   'post_type' => 'html5-blank', 

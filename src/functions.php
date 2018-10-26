@@ -113,6 +113,14 @@ function html5blank_header_scripts() {
                 ),
                 '1.0.0' );
 
+            // Localize script for load more 
+            wp_localize_script( 'html5blankscripts', 'rico_loadmore', array(
+                'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php', // WordPress AJAX
+                'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
+                // 'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
+                // 'max_page' => $wp_query->max_num_pages
+            ) );
+
             // Enqueue Scripts
             wp_enqueue_script( 'html5blankscripts' );
 

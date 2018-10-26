@@ -2705,6 +2705,12 @@ html.is-reveal-open {
   border: 0; }
 
 /* Typography */
+h2 {
+  font-size: 36px; }
+
+h4 {
+  font-size: 24px; }
+
 .button {
   font-weight: 600; }
 
