@@ -42,6 +42,29 @@ p {
     max-width: 190px;;
 }
 
+
+.master-slider.ms-skin-metro .ms-nav-next, 
+.master-slider.ms-skin-metro .ms-nav-prev {
+        background-image: none;
+        color: #fff;
+        font-size: 38px;
+        &:before {
+            font-family: "foundation-icons";
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            text-decoration: inherit;
+            content: "\f10b";
+        }
+    }
+
+.master-slider.ms-skin-metro .ms-nav-prev::before {
+    content: "\f10a";
+}
 /* Nav */ 
 
 nav.nav {
@@ -245,15 +268,44 @@ nav.nav {
         font-weight: 600;
         margin-top: 2rem;
     }
-    // .products-cell-price {
-
-    // }
 
     &:hover {
         border: solid 1px #e71975;
     }
 }
 
+/* Forms */
+
+ input, textarea {
+  width: 540px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+  border: 0;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-top: 3.5rem !important;
+  &::placeholder {
+      color: #9b9b9b;
+  }
+ }
+
+ textarea {
+     height: 150px;
+ }
+
+ input[type="checkbox"] {
+     width: auto;
+     margin-top: 2rem !important; 
+ }
+
+ .wpcf7-form p {
+     text-align: left;
+     .acceptance {
+         .wpcf7-list-item {
+             margin-left: 0;
+         }
+     }
+ }
 
 /* Footer */
 
@@ -280,9 +332,17 @@ $screen: calc(100vw - 1280px);
 
 .copyright {
     background: #272727;
-    margin-top: 10rem;
+    margin-top: 8rem;
     padding: 1.5rem 0;
     color: #929191;
+}
+
+.footer-description {
+    font-size: 14px;
+    color: #fff;
+    font-style: italic;
+    width: 268px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1281px) {

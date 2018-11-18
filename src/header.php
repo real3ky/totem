@@ -37,7 +37,7 @@
 						<div class="small-6 medium-4 cell">
 						<!-- logo -->
 						<a href="<?php echo esc_url( home_url() ); ?>">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/totemlogo.png" alt="Totem Boards" class="logo-img">
+							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/totem-logo-topbar.png" alt="Totem Boards" class="logo-img">
 						</a>
 						<!-- /logo -->
 						</div>

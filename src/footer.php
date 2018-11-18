@@ -3,6 +3,7 @@
 				<p>
 					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/totem_logo.png" alt="Totem Boards" />
 				</p>
+				<p class="footer-description"><?php bloginfo('description'); ?></p>
 				<p class="footer-social">
 					<a href="" target="_blank" ><i class="fi-social-facebook"></i></a>
 					<a href="" target="_blank" ><i class="fi-social-instagram"></i></a>
