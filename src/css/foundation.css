@@ -1973,7 +1973,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Scandia", sans-serif;
+  font-family: "Arial Black", sans-serif;
   font-style: normal;
   font-weight: 700;
   color: inherit;
@@ -2704,18 +2704,56 @@ html.is-reveal-open {
   white-space: nowrap;
   border: 0; }
 
+/* Layout */
+.section {
+  padding: 4.5rem 0; }
+
+.top-section {
+  padding: 4.5rem 0 0; }
+
+.bottom-section {
+  padding: 0 0 4.5rem; }
+
+.text-column {
+  padding: 0 3rem; }
+
+@media screen and (min-width: 640px) {
+  .section {
+    padding: 9rem 0; }
+  .top-section {
+    padding: 9rem 0 0; }
+  .bottom-section {
+    padding: 0 0 9rem; }
+  .text-column {
+    padding: 0 6rem; } }
+
 /* Typography */
 h2 {
-  font-size: 36px; }
+  font-size: 28px;
+  text-transform: uppercase; }
 
 h4 {
-  font-size: 24px; }
+  font-size: 18px; }
 
 .button {
   font-weight: 600; }
 
+.button.large {
+  font-size: 1.5rem; }
+
 p {
   font-size: 20px; }
+
+.subtitle {
+  font-size: 24px; }
+
+@media screen and (min-width: 640px) {
+  h2 {
+    font-size: 36px; }
+  h4 {
+    font-size: 24px; }
+  .button.large {
+    font-size: 2rem; } }
 
 /* Header */
 .top-header {
@@ -2723,29 +2761,14 @@ p {
   padding-bottom: 1.5rem;
   background: #fefefe; }
 
+.stiqui > .cell {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .logo-img {
-  max-width: 190px; }
-
-.master-slider.ms-skin-metro .ms-nav-next,
-.master-slider.ms-skin-metro .ms-nav-prev {
-  background-image: none;
-  color: #fff;
-  font-size: 38px; }
-  .master-slider.ms-skin-metro .ms-nav-next:before,
-  .master-slider.ms-skin-metro .ms-nav-prev:before {
-    font-family: "foundation-icons";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    text-decoration: inherit;
-    content: "\f10b"; }
-
-.master-slider.ms-skin-metro .ms-nav-prev::before {
-  content: "\f10a"; }
+  height: 24px;
+  vertical-align: middle;
+  vertical-align: -moz-middle-with-baseline; }
 
 /* Nav */
 nav.nav {
@@ -2770,15 +2793,15 @@ nav.nav {
         color: #444; }
 
 .burger {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 0;
-  height: 32px;
-  width: 32px;
+  height: 28px;
+  width: 28px;
   display: inline-block;
   cursor: pointer;
   position: relative;
-  top: 50%;
-  margin-top: -18px; }
+  vertical-align: middle;
+  vertical-align: -moz-middle-with-baseline; }
   .burger:hover {
     color: #e71975; }
 
@@ -2792,17 +2815,39 @@ nav.nav {
     height: 100%; }
 
 .general-slide-wrap {
-  padding: 4rem; }
+  padding: 2rem;
+  box-sizing: border-box;
+  height: 100%; }
   .general-slide-wrap .slide-title {
-    margin-top: 10rem;
     background-color: #0a0a0a;
     color: #fefefe;
-    font-size: 4.8rem;
+    font-size: 24px;
     font-weight: 900;
     display: inline-block;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     margin-bottom: 4rem; }
+
+.master-slider.ms-skin-metro .ms-nav-next,
+.master-slider.ms-skin-metro .ms-nav-prev {
+  background-image: none;
+  color: #fff;
+  font-size: 38px; }
+  .master-slider.ms-skin-metro .ms-nav-next:before,
+  .master-slider.ms-skin-metro .ms-nav-prev:before {
+    font-family: "foundation-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f10b"; }
+
+.master-slider.ms-skin-metro .ms-nav-prev::before {
+  content: "\f10a"; }
 
 /* Modal */
 .single-post-modal-content {
@@ -2894,7 +2939,7 @@ nav.nav {
 
 /* Forms */
 input, textarea {
-  width: 540px;
+  width: 100%;
   border-radius: 4px;
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
   border: 0;
@@ -2915,6 +2960,14 @@ input[type="checkbox"] {
   text-align: left; }
   .wpcf7-form p .acceptance .wpcf7-list-item {
     margin-left: 0; }
+
+@media screen and (min-width: 640px) {
+  input, textarea {
+    width: 640px; }
+  .general-slide-wrap {
+    padding: 10rem 4rem 4rem; }
+  .general-slide-wrap .slide-title {
+    font-size: 4.8rem; } }
 
 /* Footer */
 .footer {
@@ -2942,11 +2995,6 @@ input[type="checkbox"] {
   font-style: italic;
   width: 268px;
   margin: 0 auto; }
-
-@media screen and (min-width: 1281px) {
-  .footer {
-    width: 1280px;
-    right: -calc(calc(100vw - 1280px) / 2); } }
 
 @font-face {
   font-family: 'Scandia';

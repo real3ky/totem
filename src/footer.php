@@ -1,27 +1,28 @@
-			<!-- footer -->
-			<footer class="footer text-center" role="contentinfo">
-				<p>
-					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/totem_logo.png" alt="Totem Boards" />
-				</p>
-				<p class="footer-description"><?php bloginfo('description'); ?></p>
-				<p class="footer-social">
-					<a href="" target="_blank" ><i class="fi-social-facebook"></i></a>
-					<a href="" target="_blank" ><i class="fi-social-instagram"></i></a>
-					<a href="" target="_blank" ><i class="fi-social-twitter"></i></a>
-					<a href="" target="_blank" ><i class="fi-social-linkedin"></i></a>
-				</p>
-
-				<!-- copyright -->
-				<div class="copyright">
-				Copyright &copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>.
-				</div>
-				<!-- /copyright -->
-
-			</footer>
-			<!-- /footer -->
-
+			
 		</div>
 		<!-- /wrapper -->
+
+		<!-- footer -->
+		<footer class="footer text-center" role="contentinfo">
+			<p>
+				<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/totem_logo.png" alt="Totem Boards" />
+			</p>
+			<p class="footer-description"><?php bloginfo('description'); ?></p>
+			<p class="footer-social">
+				<a href="" target="_blank" ><i class="fi-social-facebook"></i></a>
+				<a href="" target="_blank" ><i class="fi-social-instagram"></i></a>
+				<a href="" target="_blank" ><i class="fi-social-twitter"></i></a>
+				<a href="" target="_blank" ><i class="fi-social-linkedin"></i></a>
+			</p>
+
+			<!-- copyright -->
+			<div class="copyright">
+			Copyright &copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>.
+			</div>
+			<!-- /copyright -->
+
+		</footer>
+		<!-- /footer -->
 
 		<?php wp_footer(); ?>
 

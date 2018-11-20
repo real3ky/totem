@@ -12,22 +12,83 @@
 	border: 0
 }
 
+/* Layout */ 
+
+.section {
+    padding: 4.5rem 0;
+}
+
+.top-section {
+    padding: 4.5rem 0 0;
+}
+
+.bottom-section {
+    padding: 0 0 4.5rem;
+}
+
+.text-column {
+    padding: 0 3rem
+}
+
+@media screen and (min-width: 640px) {
+    
+    .section {
+        padding: 9rem 0;
+    }
+
+    .top-section {
+        padding: 9rem 0 0;
+    }
+
+    .bottom-section {
+        padding: 0 0 9rem;
+    }
+
+    .text-column {
+        padding: 0 6rem;
+    }
+
+}
+
 /* Typography */
 
 h2 {
-    font-size: 36px;
+    font-size: 28px;
+    text-transform: uppercase;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .button {
     font-weight: 600;
 }
 
+.button.large {
+    font-size: 1.5rem;
+}
+ 
 p {
     font-size: 20px;
+}
+
+.subtitle {
+    font-size: 24px;
+}
+
+@media screen and (min-width: 640px) {
+    h2 {
+        font-size: 36px;
+    }
+
+    h4 { 
+        font-size: 24px;
+    }
+
+    .button.large {
+        font-size: 2rem;
+    }
 }
 
 /* Header */
@@ -38,33 +99,17 @@ p {
     background: $white;
 }
 
+.stiqui > .cell {
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
 .logo-img {
-    max-width: 190px;;
+    height: 24px;
+    vertical-align: middle;
+    vertical-align: -moz-middle-with-baseline;
 }
 
-
-.master-slider.ms-skin-metro .ms-nav-next, 
-.master-slider.ms-skin-metro .ms-nav-prev {
-        background-image: none;
-        color: #fff;
-        font-size: 38px;
-        &:before {
-            font-family: "foundation-icons";
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
-            -webkit-font-smoothing: antialiased;
-            display: inline-block;
-            text-decoration: inherit;
-            content: "\f10b";
-        }
-    }
-
-.master-slider.ms-skin-metro .ms-nav-prev::before {
-    content: "\f10a";
-}
 /* Nav */ 
 
 nav.nav {
@@ -97,15 +142,15 @@ nav.nav {
 }
 
 .burger {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 0;
-    height: 32px;
-    width: 32px;
+    height: 28px;
+    width: 28px;
     display: inline-block;
     cursor: pointer;
     position: relative;
-    top: 50%;
-    margin-top: -18px;
+    vertical-align: middle;
+    vertical-align: -moz-middle-with-baseline;
 
     &:hover {
         color: #e71975;
@@ -127,19 +172,44 @@ nav.nav {
 }
 
 .general-slide-wrap {
-    padding: 4rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    height: 100%;
 
     .slide-title {
-      margin-top: 10rem;
       background-color: $black;
       color: $white;
-      font-size: 4.8rem;
+      font-size: 24px;
       font-weight: 900;
       display: inline-block;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
       margin-bottom: 4rem;
     }
+}
+
+
+.master-slider.ms-skin-metro .ms-nav-next, 
+.master-slider.ms-skin-metro .ms-nav-prev {
+        background-image: none;
+        color: #fff;
+        font-size: 38px;
+        &:before {
+            font-family: "foundation-icons";
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            text-decoration: inherit;
+            content: "\f10b";
+        }
+    }
+
+.master-slider.ms-skin-metro .ms-nav-prev::before {
+    content: "\f10a";
 }
 
 /* Modal */
@@ -277,7 +347,7 @@ nav.nav {
 /* Forms */
 
  input, textarea {
-  width: 540px;
+  width: 100%;
   border-radius: 4px;
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
   border: 0;
@@ -307,9 +377,23 @@ nav.nav {
      }
  }
 
-/* Footer */
+@media screen and (min-width: 640px) {
 
-$screen: calc(100vw - 1280px);
+    input, textarea {
+        width: 640px;
+    }
+
+    .general-slide-wrap {
+        padding: 10rem 4rem 4rem;
+    }
+
+    .general-slide-wrap .slide-title {
+        font-size: 4.8rem;
+    }
+}
+
+
+/* Footer */
 
 .footer {
     background: $black;
@@ -345,10 +429,12 @@ $screen: calc(100vw - 1280px);
     margin: 0 auto;
 }
 
-@media screen and (min-width: 1281px) {
-    .footer {
-        width: 1280px;
-        right: - calc(#{$screen} / 2);
-    }
-}
+// $screen: calc(100vw - 1280px);
+
+// @media screen and (min-width: 1281px) {
+//     .footer {
+//         width: 1280px;
+//         right: - calc(#{$screen} / 2);
+//     }
+// }
 
